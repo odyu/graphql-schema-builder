@@ -1,6 +1,20 @@
 {
   "name": "graphql-schema-builder",
   "version": "1.0.0",
+  "license": "MIT",
   "main": "index.js",
-  "license": "MIT"
+  "scripts": {
+    "postinstall": "sort-package-json",
+    "build": "ts-node lib/build"
+  },
+  "dependencies": {
+    "format-graphql": "^1",
+    "graphql": "^15",
+    "graphql-import-files": "^1",
+    "ts-node": "^10",
+    "typescript": "^4"
+  },
+  "devDependencies": {
+    "sort-package-json": "^1"
+  }
 }

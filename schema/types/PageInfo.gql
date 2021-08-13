@@ -1,0 +1,27 @@
+"""
+# PageInfo
+
+## desc
+...
+"""
+type PageInfo {
+  """
+  End Cursor
+  """
+  endCursor: String
+
+  """
+  Has Next Page
+  """
+  hasNextPage: Boolean
+
+  """
+  Has Preview Page
+  """
+  hasPreviewPage: Boolean
+
+  """
+  Start Cursor
+  """
+  startCursor: String
+}

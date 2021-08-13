@@ -1,0 +1,127 @@
+"""
+# Mutation
+
+## desc
+...
+"""
+type Mutation {
+  """Create User"""
+  createUser(input: CreateUserInput!): CreateUserPayload!
+}
+
+"""
+# Query
+
+## desc
+...
+"""
+type Query {
+  """Find User By ID"""
+  findUser(id: ID!): User
+}
+
+"""
+# CreateUserInput
+
+## desc
+...
+"""
+input CreateUserInput {
+  """First Name"""
+  firstName: String!
+  """Last Name"""
+  lastName: String!
+  """FullName"""
+  fullName: String!
+}
+
+"""
+# Connection
+
+## desc
+...
+"""
+interface Connection {
+  """Edges"""
+  edges: [Edge!]!
+  """PageInfo"""
+  pageInfo: PageInfo!
+}
+
+"""
+# Edge
+
+## desc
+...
+"""
+interface Edge {
+  """Cursor"""
+  cursor: String!
+  """Node"""
+  node: Node!
+}
+
+"""
+# Node
+
+## desc
+...
+"""
+interface Node {
+  """ID"""
+  id: ID!
+}
+
+"""
+# CreateUserPayload
+
+## desc
+...
+"""
+type CreateUserPayload {
+  user: User
+  error: ValidationError
+}
+
+"""
+# PageInfo
+
+## desc
+...
+"""
+type PageInfo {
+  """End Cursor"""
+  endCursor: String
+  """Has Next Page"""
+  hasNextPage: Boolean
+  """Has Preview Page"""
+  hasPreviewPage: Boolean
+  """Start Cursor"""
+  startCursor: String
+}
+
+"""
+# User
+
+## desc
+...
+"""
+type User implements Node {
+  """ID"""
+  id: ID!
+  """First Name"""
+  firstName: String!
+  """Last Name"""
+  lastName: String!
+  """FullName"""
+  fullName: String!
+}
+
+type ValidationError {
+  message: String!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

@@ -1,0 +1,12 @@
+"""
+# Node
+
+## desc
+...
+"""
+interface Node {
+  """
+  ID
+  """
+  id: ID!
+}

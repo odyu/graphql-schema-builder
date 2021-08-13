@@ -1,0 +1,17 @@
+"""
+# Connection
+
+## desc
+...
+"""
+interface Connection {
+  """
+  Edges
+  """
+  edges: [Edge!]!
+
+  """
+  PageInfo
+  """
+  pageInfo: PageInfo!
+}

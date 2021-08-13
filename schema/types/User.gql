@@ -1,0 +1,27 @@
+"""
+# User
+
+## desc
+...
+"""
+type User implements Node {
+  """
+  ID
+  """
+  id: ID!
+
+  """
+  First Name
+  """
+  firstName: String!
+
+  """
+  Last Name
+  """
+  lastName: String!
+
+  """
+  FullName
+  """
+  fullName: String!
+}

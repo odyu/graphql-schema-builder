@@ -1,0 +1,12 @@
+"""
+# Query
+
+## desc
+...
+"""
+type Query {
+  """
+  Find User By ID
+  """
+  findUser(id: ID!): User
+}

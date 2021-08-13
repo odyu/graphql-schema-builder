@@ -1,0 +1,10 @@
+"""
+# CreateUserPayload
+
+## desc
+...
+"""
+type CreateUserPayload {
+  user: User
+  error: ValidationError
+}

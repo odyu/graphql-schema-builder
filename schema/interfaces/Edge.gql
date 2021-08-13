@@ -1,0 +1,17 @@
+"""
+# Edge
+
+## desc
+...
+"""
+interface Edge {
+  """
+  Cursor
+  """
+  cursor: String!
+
+  """
+  Node
+  """
+  node: Node!
+}

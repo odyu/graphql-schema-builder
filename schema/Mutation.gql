@@ -1,0 +1,12 @@
+"""
+# Mutation
+
+## desc
+...
+"""
+type Mutation {
+  """
+  Create User
+  """
+  createUser(input: CreateUserInput!): CreateUserPayload!
+}
