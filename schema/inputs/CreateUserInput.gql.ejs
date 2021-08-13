@@ -1,0 +1,10 @@
+"""
+# CreateUserInput
+
+## desc
+...
+"""
+input CreateUserInput {
+  <% const ROOT = `${process.cwd()}`; %>
+  <%- include(`${ROOT}/partials/types/UserFields.gql.ejs`); %>
+}

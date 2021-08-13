@@ -1,4 +1,36 @@
 """
+# CreateUserInput
+
+## desc
+...
+"""
+input CreateUserInput {
+  """First Name"""
+  firstName: String!
+  """Last Name"""
+  lastName: String!
+  """FullName"""
+  fullName: String!
+}
+
+"""
+# User
+
+## desc
+...
+"""
+type User implements Node {
+  """ID"""
+  id: ID!
+  """First Name"""
+  firstName: String!
+  """Last Name"""
+  lastName: String!
+  """FullName"""
+  fullName: String!
+}
+
+"""
 # Mutation
 
 ## desc
@@ -18,21 +50,6 @@ type Mutation {
 type Query {
   """Find User By ID"""
   findUser(id: ID!): User
-}
-
-"""
-# CreateUserInput
-
-## desc
-...
-"""
-input CreateUserInput {
-  """First Name"""
-  firstName: String!
-  """Last Name"""
-  lastName: String!
-  """FullName"""
-  fullName: String!
 }
 
 """
@@ -98,23 +115,6 @@ type PageInfo {
   hasPreviewPage: Boolean
   """Start Cursor"""
   startCursor: String
-}
-
-"""
-# User
-
-## desc
-...
-"""
-type User implements Node {
-  """ID"""
-  id: ID!
-  """First Name"""
-  firstName: String!
-  """Last Name"""
-  lastName: String!
-  """FullName"""
-  fullName: String!
 }
 
 type ValidationError {

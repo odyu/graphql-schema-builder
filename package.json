@@ -8,6 +8,10 @@
     "build": "ts-node lib/build"
   },
   "dependencies": {
+    "@graphql-tools/merge": "^6",
+    "@types/ejs": "^3",
+    "ejs": "^3",
+    "fast-glob": "^3",
     "format-graphql": "^1",
     "graphql": "^15",
     "graphql-import-files": "^1",

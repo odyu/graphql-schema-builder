@@ -1,0 +1,15 @@
+"""
+# User
+
+## desc
+...
+"""
+type User implements Node {
+  """
+  ID
+  """
+  id: ID!
+
+  <% const ROOT = `${process.cwd()}`; %>
+  <%- include(`${ROOT}/partials/types/UserFields.gql.ejs`); %>
+}
